@@ -1,0 +1,49 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+.typingHome{
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation:
+    typing 3.5s steps(30,end) 1s 1 normal both,
+    blink-caret .75s steps(30,end) infinite;
+}
+@keyframes typing{
+    from {width:0;}
+    to {width:270px;}
+}
+@keyframes blink-caret{
+    from,to {border-color: transparent}
+    50% {border-color: black;}
+}
+.panel{
+    display: none;
+}
+.panel.active{
+    display: block;
+}
+
+.tabs{
+    display: flex;
+    cursor: pointer;
+}
+.active-tabs{
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+.active-tabs::before {
+    content: "";
+    display: block;
+}
+.content {
+    display: none;
+}
+.active-content {
+    display: flex;
+}
+.App{
+    height: 100%;
+    width: 100%;
+}
