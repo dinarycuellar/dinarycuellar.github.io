@@ -7,16 +7,16 @@ function Navigation () {
         setNav(!nav)
     }
     return(
-        <div className="container relative mx-auto p-6 top-0">
+        <div className="container relative mx-auto p-6 top-0 text-textLight">
             <div className="flex items-center justify-between">
                 <div>
                     <h1 className="pt-2 font-bold">DINARY CUELLAR</h1>
                 </div>
-                <ul className={nav?"absolute flex-col items-center self-end mt-20 top-0 p-6 space-y-6 bg-black font-semibold text-white sm:w-auto sm:self-center left-6 right-6":"hidden font-semibold md:flex space-x-6"}>
-                    <li>
+                <ul className={nav?"absolute flex-col items-center self-end mt-20 top-0 p-6 space-y-6 font-semibold sm:w-auto sm:self-center left-6 right-6 bg-bgColor":"hidden font-semibold md:flex space-x-6"}>
+                    <li className="hover:text-textGreen">
                         <Link to="/">ABOUT</Link>
                     </li>
-                    <li>
+                    <li className="hover:text-textGreen">
                         <Link to="/portfolio">PORTFOLIO</Link>
                     </li>
                 </ul>

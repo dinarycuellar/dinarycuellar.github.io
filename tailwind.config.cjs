@@ -7,7 +7,9 @@ export default {
         EBGaramond: ['EB Garamond', 'serif'],
       },
       colors: {
-        'bgColor':'#FFFFFF',
+        'bgColor':'#1b1b1b',
+        'textGreen':'#64FFDA',
+        'textLight':'#FFFFFF',
         'Github' : '#333',
         'Linkedin' : '#0077B5',
       },

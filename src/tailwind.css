@@ -15,7 +15,7 @@
 }
 @keyframes blink-caret{
     from,to {border-color: transparent}
-    50% {border-color: black;}
+    50% {border-color: #64FFDA;}
 }
 .panel{
     display: none;
@@ -46,4 +46,7 @@
 .App{
     height: 100%;
     width: 100%;
+}
+body{
+    background-color: #1b1b1b;
 }
